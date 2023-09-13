@@ -1,2 +1,2 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://127.0.0.1:27017/todo")
+mongoose.connect("mongodb+srv://rishabh:1234@cluster0.ty1ts70.mongodb.net/todo?retryWrites=true&w=majority")
