@@ -84,7 +84,13 @@ app.get("/todos", async (req, res) => {
     });
     return;
   }
-  const { todos } = await Todos.findOne({ userId: user._id }).exec();
+  const todosList=await Todos.findOne({ userId: user._id }).exec();
+  if(!todosList){
+    res.status(500);
+    res.json();
+    return;
+  }
+  const { todos } = todosList;
   res.json(todos);
 });
 
