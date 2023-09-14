@@ -18,7 +18,7 @@ export default function Login() {
   
     const login = (e) => {
       e.preventDefault();
-      fetch(`http://43.204.32.165:4000/login`, {
+      fetch(`http://localhost:4000/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

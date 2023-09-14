@@ -11,7 +11,7 @@ export default function Register() {
 
   const register = (e) => {
     e.preventDefault();
-    fetch(`http://43.204.32.165:4000/register`, {
+    fetch(`http://localhost:4000/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
